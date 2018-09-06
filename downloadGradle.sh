@@ -2,6 +2,6 @@
 
 for GRADLE_VERSION in "$@"
 do
-    ./gradlew wrapper --gradle-version ${GRADLE_VERSION}
-    ./gradlew -v
+    ./gradlew wrapper --no-daemon --gradle-version ${GRADLE_VERSION}
+    ./gradlew --no-daemon -v
 done
