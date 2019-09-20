@@ -1,6 +1,7 @@
 # Gradle Wrapper Cache Populator
 
-We use this project at Allogy to load up Gradle versions onto our build AMIs.
+We use this project at Allogy to load up Gradle versions onto our build AMIs. When we build our AMIs, we can thus
+install various versions of Gradle. This allows our build slaves to start builds quicker.
 
 ## Packer Usage
 
