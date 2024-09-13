@@ -19,3 +19,17 @@ Here is a snippet for a Packer provisioner which will load the caches.
     ]
 }
 ```
+
+## Gradle to Java version matrix
+
+Depending on the version of Gradle you are using, you may need to use a specific version of Java. Here is a matrix of supported versions. 
+
+Please note that Java 21 is not yet supported by this project due to the need to maximize support for Java 8-17. Java 21 is not compatible with gradle versions lower than 8.3. 
+
+| **Gradle Version**      | **Corretto 17 (Java 17)** | **Corretto 11 (Java 11)** | **Corretto 8 (Java 8)** |
+|-------------------------|---------------------------|---------------------------|-------------------------|
+| **Gradle 8.3+**         | ✅ Supported              | ✅ Supported              | ❌ Unsupported          |
+| **Gradle 7.6.2+**       | ✅ Supported              | ✅ Supported              | ❌ Unsupported          |
+| **Gradle 7.3+**         | ✅ Supported              | ✅ Supported              | ✅ Supported            |
+| **Gradle 6.9+**         | ❌ Unsupported            | ✅ Supported              | ✅ Supported            |
+| **Gradle 5.x to 6.8.3** | ❌ Unsupported            | ❌ Unsupported            | ✅ Supported            |
